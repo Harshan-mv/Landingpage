@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytes & Backpacks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <img src="img\bytesnbackpacksbanner.jpg" alt="Bytes & Backpacks Logo" width="1111" height="260">
+        <h1>Bytes & Backpacks</h1>
+        <p>Explore. Learn. Innovate.</p>
+        <a href="https://www.youtube.com/channel/UCLy6MmjItL254_HimefqXkQ" class="btn">Subscribe</a>
+    </header>
+    
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Bytes & Backpacks – Welcome to the channel, your ultimate destination for the perfect blend of technology, travel, and education! 🌍🚀🔒📖✨🔍🤯</p>
+            <p>What You’ll Find on Bytes & Backpacks:</p>
+            <ul>
+                <li>✅ <strong>Tech & Innovation</strong> – Reviews of AI advancements, blockchain trends,and software tutorials.</li>
+                <li>✅ <strong>Travel & Exploration</strong> – budget-friendly travel tips, and must-visit destinations for tech lovers.</li>
+                <li>✅ <strong>Education & Learning</strong> – Online courses, productivity tools, and e-learning.</li>
+            </ul>
+            <p>Join us on this journey as we decode technology, explore new destinations, and share knowledge that fuels innovation.</p>
+        </div>
+    </section>
+    
+    
+    <!-- <section class="videos">
+        <div class="container">
+            <h2>Featured Videos</h2>
+            <div class="video-grid">
+                <div class="video">
+                    <img src="video1-thumbnail.jpg" alt="Video 1">
+                    <p>Latest Travel & Tech Video</p>
+                </div>
+                <div class="video">
+                    <img src="video2-thumbnail.jpg" alt="Video 2">
+                    <p>Top Gadgets for Digital Nomads</p>
+                </div>
+                <div class="video">
+                    <img src="video3-thumbnail.jpg" alt="Video 3">
+                    <p>AI in Travel: What's Next?</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to get exclusive tech and travel updates!</p>
+            <form id="newsletterForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>Follow us: 
+                <a href="https://www.instagram.com/bytes_n_backpacks/">Instagram</a>  
+            </p>
+            <p>&copy; 2025 Bytes & Backpacks. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const formData = { name, email };
+            localStorage.setItem("newsletterData", JSON.stringify(formData));
+            alert("Thank you for subscribing!");
+        });
+    </script>
+</body>
+</html>
